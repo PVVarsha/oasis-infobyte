@@ -30,7 +30,11 @@
   #img-div{
     margin: 50px 5px;
     padding: 50px;
-    background: white;
+    
+  }
+
+#img-div{
+    background-image: url('https://images.unsplash.com/photo-1516310029508-8f346b013f45?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   }
 
   #image{
