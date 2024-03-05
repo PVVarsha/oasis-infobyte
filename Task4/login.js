@@ -1,11 +1,27 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+function Show(id)
+{
+  if (document.getElementById(id).style.display == 'none') {
+       document.getElementById(id).style.display = 'block';
+  }
+  else {
+       document.getElementById(id).style.display = 'none';
+  }
+};
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+//Submit Button
+function Verify() {
+  var userRef = "Employee";
+  var passRef = "User1234";
+  
+  var user =  document.getElementById("username").value;
+  var pass = document.getElementById("password").value;
+  if (user == userRef && pass == passRef) {
+  alert("Connexion is established succesfully");
+  } 
+  else {
+  alert("Incorrect Password...");
+  }
+};
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+
+

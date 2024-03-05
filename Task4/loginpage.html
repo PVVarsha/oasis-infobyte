@@ -1,55 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styling.css">
-    
-</head>
-<body>
-    
-
-
-    <h2>Sign in/up Form</h2>
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Create Account</h1>
-                
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
-                
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
+  <head>
+    <meta charset="utf-8">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="styling.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <p>- Actually the right username is Employee and passsword User1234 -</p>
+    </header>
+    <section class="CheckBox">
+      <h1>LOGIN AUTHENTICATION</h1>
+      <form action="#" method="post" name="authentication" id="authentication" class="authentication">
+        <label for="username">Enter your username :</label>
+        <br>
+        <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <label for="password">Enter your password :</label>
+        <br>
+        <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <input id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+        <button id="rule" type="button" onclick="Show();">Rules</button>
+      </form>
+      <div id="rules">
+               <ul>
+          <li>Username must have between 3 and 15 caracters</li>
+          <li>Password must have between 8 and 15 caracters</li>
+          <li>Username and Password required</li>
+          <li>Use only numbers and letters</li>
+        </ul>
+      </div>
+    </section>
     <script src="login.js"></script>
-    </body>
-    </html>
+  </body>  
+</html>
